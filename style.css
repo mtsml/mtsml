@@ -1,0 +1,18 @@
+#add {display: none;}
+table {border-collapse: collapse;}
+td {
+    padding: 5px;
+    border: thin solid #669966
+}
+tr :hover {background-color: #99cc99;}
+#wordbook {width: 600px;}
+#wordbook div {
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    border: thin solid #cc9966;
+}
+#q {background-color: #ffffcc;}
+#a {background-color: #ffffee;}
+#wordbook input {float: right;}
