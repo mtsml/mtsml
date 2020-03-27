@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="main.js"></script>
+    <title>単語帳</title>
+</head>
+<body>
+    <p>単語帳</p>
+    <input type="button" value="単語帳を開く（英→日）" onclick="startStudy('en')">
+    <input type="button" value="単語帳を開く（日→英）" onclick="startStudy('ja')">
+    <input type="button" value="一覧表示" onclick="listWords()">
+    <input type="button" value="単語を追加" onclick="displayForm()">
+    <hr>
+    <div id="add">
+        英語：<input type="text" id="en">　日本語：<input type="text" id="ja">
+        <input type="button" value="登録" onclick="addWord(true)">
+        <input type="button" value="キャンセル" onclick="addWord(false)">
+        <hr>
+    </div>
+    <table id="list"></table>
+    <div id="wordbook">
+        <div id="q"></div>
+        <div id="a"></div>
+        <input type="button" id="op" value="" onclick="study()">
+    </div>
+</body>
+</html>
